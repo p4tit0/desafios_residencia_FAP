@@ -53,7 +53,7 @@ def parse(filepath):
                 parse_object[f"game_{current_game_id}"]["players"].append(killer)
                 parse_object[f"game_{current_game_id}"]["kills"][killer] = 0
 
-            # -----S
+            # -----
             # adiciona 1 kill a cada killer
             if killer != "<world>":     
                 parse_object[f"game_{current_game_id}"]["kills"][killer] += 1
